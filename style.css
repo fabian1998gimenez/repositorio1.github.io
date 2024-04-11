@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+body {
+
+    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+    color: #eee;
+}
+
+#contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 900px;
+    height: 500px;
+    text-align: center;
+    position: relative;
+    inset: 0;
+    margin: auto;
+    /* padding: 40px; */
+}
+
+#calculadora {
+    background: #7FB3D5;
+    width: 50%;
+    height: 100%;
+    float: left;
+    align-self: center;
+    position: relative;
+    /* Con estas tres ultimas lineas vamos a tener como resultado el que esten lado a lado */
+    transition: box-shadow 0.3s ease;
+    border-radius: 35px 35px 35px 35px;
+    -moz-border-radius: 35px 35px 35px 35px; 
+    -webkit-border-radius: 35px 35px 35px 35px; 
+    border: 0px solid #5878ca;
+}
+
+#calculadora:hover {
+    box-shadow: 0 0.5rem 0.4rem rgba(0, 0, 0, 0.3);
+}
+
+#detalle {
+    background: #FF5733;
+    width: 50%;
+    height: 100%;
+    float: right;
+    position: relative;
+    /* align-self: center; */
+    color: #f6f5f7;
+    transition: box-shadow 0.3s ease;
+    border-radius: 35px 35px 35px 35px;
+    -moz-border-radius: 35px 35px 35px 35px; 
+    -webkit-border-radius: 35px 35px 35px 35px; 
+    border: 0px solid #5878ca;
+}
+
+.contenido{
+    /* Estas tres lineas van a centrar el contenido verticalmente dentro de cada div */
+    position: relative;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    padding: 40px;
+}
+
+input {
+	width: 70%;
+    padding: 12px 15px;
+    border: none;
+    background-color: #eee;
+}
+
+button {
+    font-size: 15px;
+	font-weight: bold;
+	padding: 12px 45px;
+	border-radius: 30px;
+	background-color: #FF5733;
+	border: 1px solid #FF5733;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	transition: transform 20ms ease-in;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+button:active {
+	transform: scale(0.95);
+}
+button:hover {
+    box-shadow: 0 0.5rem 0.4rem rgba(0, 0, 0, 0.5);
+}
+
+#error {
+    display: none;
+}
+
+#resultadoFlujo {
+    display: none;
+}
+
+
+
+/* .calculadora {
+    transition: box-shadow 0.3s ease;
+    background-color: rgba(148, 231, 212, 0.488);
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    padding: 0.25rem 0;
+    cursor: pointer;
+}
+ */
